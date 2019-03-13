@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Aula29 - Validação de formulario Com JavaScript</title>
+        
+        <style>
+        
+            input:focus{
+                background-color: #eef;
+            }
+        
+        </style>
+
+        <script>
+        
+            function validar(){
+                if(document.cad.fnome.value==""){
+                    alert("Campo nome não pode ser vazio");
+                    document.cad.fnome.focus(); //posiciona o cursosr nesse campo
+                    return false;
+                }else if(document.cad.fsenha.value==""){
+                    alert("Campo senha não pode estar em branco");
+                    document.cad.fsenha.focus(); //posiciona o cursosr nesse campo
+                    return false;
+                }else if(document.cad.ftel.value==""){
+                    alert("Digite o telefone");
+                    document.cad.ftel.focus(); //posiciona o cursosr nesse campo
+                    return false;
+                }else{
+                    alert("Dados enviados!");
+                }
+            }
+        
+        </script>
+    </head>
+
+    <body>
+
+        <form name="cad"  onSubmit="return validar()">
+            <label>Nome: </label>
+            <br>
+            <input type="text" name="fnome" size="50">
+            <br>
+            <br>
+            <label>Senha: </label>
+            <br>
+            <input type="password" name="fsenha" size="10">
+            <br>
+            <br>
+            <label>Telefone: </label>
+            <br>
+            <input type="text" name="ftel" size="15">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </body>
+</html>

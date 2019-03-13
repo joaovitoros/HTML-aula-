@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Aula7 - CSS(Tabelas)</title>
+        <!border-collapse: collapse = "junta" a 
+        configuração das bordas>
+        <style type="text/CSS">
+
+            body{
+                background-color: #ddf;
+            }
+            table{
+                border-spacing: 0px;
+                border-collapse: collapse; 
+            }
+            
+            td{
+                border: 1px solid #000;
+                padding: 0px;
+            }
+            
+            .titulo1,.titulo2{
+                background-color: #777;
+                text-align: center;
+                height: 50px;
+                vertical-align: middle;
+                color: #fff;
+                font-weight: bold;
+                font-size: 23px;
+                font-family: Arial;
+                font-style: italic;
+            }
+            .titulo2{
+                background-color: #c0c0c0;
+                height: 30px;
+                font-size: 15px;
+                color: #000;
+            }
+
+            .colaborador,.salario{
+                color: #008;
+                background-color: #f8f8f8;
+            }
+
+            .salario{
+                color: #800;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <table width="500">
+
+            <tr>
+                <td colspan="2" class="titulo1">Tabela de Colaboradores</td> 
+            </tr>
+
+            <tr>
+                <td class="titulo2">Colaborador</td> <td class="titulo2">Salário</td>
+            </tr>
+
+            <tr>
+                <td class="colaborador">Merioswaldir</td> <td class="salario">R$3.500,00</td>
+            </tr>
+
+            <tr>
+                <td class="colaborador">Benecléia</td> <td class="salario">R$2,750,00</td>
+            </tr>
+            <tr>
+                <td class="colaborador">Faromildon</td> <td class="salario">R$3.000,00</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>

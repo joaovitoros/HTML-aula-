@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Aula27 - Formularios</title>
+        <style type="text/css">
+        </style>
+    </head>
+
+    <body>
+        <form name="cad" action="" method="get">
+            <label>Nome: </label>
+            <br>
+            <input type="text" name="fnome" size="40" maxlength="35"/>
+            <br>
+            <br>
+            <label>Senha: </label>
+            <br>
+            <input type="password" name="fsenha" size="15" maxlength="10"/>
+            <br>
+            <br>
+            <label>Possui veiculo proprio?</label>
+            <br>
+            <input type="radio" name="fcarro" value="S" checked/>Sim
+            <br>
+            <input type="radio" name="fcarro" value="N"/>Não
+            <br>
+            <br>
+            <label>Caso possui veiculo, qual a marca?</label>
+            <br>
+            <input type="checkbox" name="fvw"/>VW<br>
+            <input type="checkbox" name="fgm"/>GM<br>
+            <input type="checkbox" name="ffiat"/>FIAT<br>
+            <input type="checkbox" name="fford"/>FORD<br>
+            <input type="checkbox" name="fhyundai"/>HYUNDAI<br>
+            <input type="checkbox" name="fbmw"/>BMW<br>
+            <input type="checkbox" name="fkia"/>KIA<br>
+            <input type="checkbox" name="foutro"/>OUTRO
+            <br>
+            <label>Selecione seu estado:</label>
+            <br>
+            <select name="fuf">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+            <br>
+            <br>
+            <label>Deixe seu comentario: </label>
+            <br>
+            <textarea name="fcoment" cols="40" rows="5"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="¯\_(ツ)_/¯">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Aula25 - Relogio</title>
+        <script>
+        
+
+            function rel(){
+                var tempo=new Date();
+
+                var hora=tempo.getHours();
+                var min=tempo.getMinutes();
+                var seg=tempo.getSeconds();
+
+
+                if(hora<10){
+                    hora="0"+tempo.getHours();
+                }
+                if(min<10){
+                    min="0"+tempo.getMinutes();
+                }
+                if(seg<10){
+                    seg="0"+tempo.getSeconds();
+                }
+
+                var impHoras=hora+":"+min+":"+seg;
+
+                document.getElementById("relogio").innerHTML=impHoras;
+                setTimeout("rel()",1000);
+            }
+
+            
+            
+        </script>
+    </head>
+    <body onload="rel()">
+        <p style="text-align: center;" id="relogio"></p>
+    </body>
+</html>

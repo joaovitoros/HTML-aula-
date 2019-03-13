@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Aula23 - JavaScript 6</title>
+        <meta charset="utf-8">
+        <script>
+        
+            function abrepg(link){
+                window.location.href=link;
+                //window.open(link); Abre em nova janela
+            }
+        
+        </script>
+    </head>
+    <body>
+        <select name="Aulas" size="6" onchange="abrepg(value)">
+            <option value="aula1.html">Aula1</option>
+            <option value="aula2(Listas).html">Aula2</option>
+            <option value="aula3(Textos).html">Aula3</option>
+            <option value="aula4(Tabela).html">Aula4</option>
+        </select>
+    </body>
+</html>

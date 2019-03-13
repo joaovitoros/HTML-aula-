@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Aula16 - Formularios</title>
+        <style type="text/css">
+
+            body{
+                background-color: #eee;
+            }
+
+            label{
+                color: #000;
+                font-weight: bold;
+            }
+
+            .bt{
+                background-color: #c00;
+                color: #fff;
+                width: 100px;
+                height: 25px;
+                border: 0px;
+                cursor: pointer;
+            }
+
+            input:hover,select:hover,textarea:hover{
+                border: 2px solid #00f;
+            }
+
+            input:focus,select:focus,textarea:focus{
+                background-color: #aad;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="F_Aula" method="POST" action="recebe.html">
+            <label for="">Nome:</label><br>
+            <input type="text" name="F_Nome" size="40" maxlength="30"/>
+            <br>
+            <br>
+            <label for="">Senha:</label><br>
+            <input type="password" name="F_Senha" size="40" maxlength="20"/>
+            <br>
+            <br>
+            <label for="">Qual esporte você pratica?</label><br><br>
+            <input type="checkbox" name="F_Futebol" value="Futebol"/><label for="">Futebol</label><br>
+            <input type="checkbox" name="F_Natacao" value="Natacao"/><label for="">Natação</label><br>
+            <input type="checkbox" name="F_Basquete" value="Basquele"><label for="">Basquete</label>
+            <br>
+            <br>
+            <label for="">Possui veiculo?</label><br>
+            <input type="radio" name="F_Veiculo" value="s"/><label for="">Sim</label><br>
+            <input type="radio" name="F_Veiculo" value="n"><label for="">Não</label>
+            <br>
+            <br>
+            <label for="">Estado:</label><br>
+            <select name="F_Estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio De Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Comentario:</label><br>
+            <textarea name="F_Comentario" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <input class="bt" type="submit" value="Enviar"/>
+            <input class="bt" type="reset" value="Limpar">
+            <input class="bt" type="button" value="Sem Ação">
+        </form>
+    </body>
+</html>

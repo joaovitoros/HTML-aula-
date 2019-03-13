@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Aula26 - Eventos</title>
+        <meta charset="utf-8">
+
+        <script>
+        
+            function cump(){
+                alert("Ola, seja bem vindo!");
+            }
+
+            function clique(){
+                alert("Fui clicado");
+            }
+
+            function entra(){
+                alert("Fui selecionado");
+            }
+
+            function sai(){
+                alert("Perdi o foco");
+            }
+
+            function fechar(){
+                alert("Tchau...");
+            }
+        
+        </script>
+
+    </head>
+    <body onload="cump()" onunload="fechar()">
+        
+        <input type="button" value="Aula - Eventos" onclick="clique()"/>
+        <br>
+        <br>
+        <input type="text" name="text_aula" />
+        <! onfocus=recebe o foco, onblur= perder o foco, ondblclick= clique duplo,
+        onkeydown= tecla para baixo, onkeypress= tecla precionada, onkeyup=tecla é solta,
+        onmousedown=clica com o mouse, onmouseout= passa o mouse, onmouseout= o mouse sai>
+    </body>
+</html>
